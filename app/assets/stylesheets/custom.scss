@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ @import "bootstrap";
+ 
 body {
   margin: 0;
 }
@@ -74,7 +76,7 @@ header {
 a {
   text-decoration: none;
   margin: 5px 20px;
-  color: rgb(16, 5, 27);
+  color: rgb(0, 0, 0);
   font-weight: bold;
 }
 
