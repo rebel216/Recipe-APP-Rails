@@ -1,0 +1,25 @@
+<header>
+  <div class="header">
+    <div>
+      <a href="#" class="brand">Rails Recipe App</a>
+    </div>
+    <div>
+      <nav class="nav">
+        <ul class="nav-wrapper">
+          <li><%= button_to "Food List", user_foods_path(current_user), method: :get%></li>
+          <li><%= link_to "Recipes" %> </li>
+          <li><%= link_to "Public recipes" %> </li>
+          <li><%= link_to "Shopping list" %> </li>
+        </ul>
+      </nav>
+    </div>
+    <div>
+     <% if user_signed_in? %>
+        <%= button_to "Sign out", destroy_user_session_path, method: :delete%>
+      <% else %>
+        <%= link_to "Log in", new_user_session_path %>
+        <%= link_to "Sign up", new_user_registration_path %>
+      <% end %>
+    </div>
+  </div>
+</header>
