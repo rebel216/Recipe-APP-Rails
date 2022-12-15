@@ -1,0 +1,21 @@
+<h2>ALL RECIPES | <small> <%= link_to 'Add Recipe', new_recipe_path %></small></h2>
+
+
+
+<% @recipes.each do |r|  %>
+<div class="main-container">
+
+<div>
+<h3><%= r.name %></h3>
+ <%= link_to 'Show', recipe_path(r) %>
+<%= link_to 'Edit', edit_recipe_path(r) %>
+
+ <%# <%= button_to "Remove",  recipe_path(r.id), method: :delete, class: "button", data: { confirm: "Are you sure?"} %>
+
+</div>
+
+<div><%= r.description %></div>
+
+</div>
+
+<% end %>

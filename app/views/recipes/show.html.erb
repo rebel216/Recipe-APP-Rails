@@ -1,0 +1,14 @@
+<h2> Receipt for  <%= @recipes.name %></h2>
+
+<p><strong>Preparation Time: </strong> <%= @recipes.preparation_time %></p>
+<p><strong>Cooking Time:</strong> <%= @recipes.cooking_time %> </p>
+<p><strong>Steps:</strong> <%= @recipes.description %></p>
+
+<%= link_to 'Return to recipes listing', recipes_path %> | 
+<%= link_to 'Add Ingredient' %>  |
+<% if can? :destroy, @recipes %> |
+<%= button_to 'Destroy', recipe_path(@recipes), method: :delete, data: { confirm: "Are you sure?"} %>
+<% end %>
+<hr/>
+
+<div>List of Foods</div>
