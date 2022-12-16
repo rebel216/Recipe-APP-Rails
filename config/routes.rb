@@ -21,4 +21,7 @@ Rails.application.routes.draw do
   end
 
   # Defines the root path route ("/")
+
+  #resources :shoppings, only:[:index]
 end
+
