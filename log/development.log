@@ -1241,3 +1241,402 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 2452ms (Views: 2450.0ms | ActiveRecord: 0.0ms | Allocations: 39969)
 
 
+Started GET "/" for 127.0.0.1 at 2022-12-16 20:23:33 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 9.0ms | Allocations: 5452)
+  Rendered users/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 5942)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6038)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 9690)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `shoppings_path' for #<ActionView::Base:0x0000000000e808>
+
+          <li>'.freeze;@output_buffer.append=( link_to "Shopping list", shoppings_path);@output_buffer.safe_append='</li>
+                                                                        ^^^^^^^^^^^^^^):
+     7:       <nav class="nav">
+     8:         <ul class="nav-wrapper">
+     9:           
+    10:           <li><%= link_to "Shopping list", shoppings_path%></li>
+    11:         </ul>
+    12:       </nav>
+    13:     </div>
+  
+app/views/_navbar.html.erb:10
+app/views/users/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2022-12-16 20:25:06 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.0ms | Allocations: 644)
+  Rendered users/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 722)
+  Rendered layout layouts/application.html.erb (Duration: 618.7ms | Allocations: 47626)
+Completed 200 OK in 620ms (Views: 619.2ms | ActiveRecord: 0.0ms | Allocations: 48885)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-16 20:25:52 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.4ms | Allocations: 346)
+  Rendered users/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 410)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 5073)
+Completed 200 OK in 15ms (Views: 13.3ms | ActiveRecord: 0.0ms | Allocations: 5357)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-16 20:26:03 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.8ms | Allocations: 364)
+  Rendered users/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 428)
+  Rendered layout layouts/application.html.erb (Duration: 2552.0ms | Allocations: 38616)
+Completed 200 OK in 2554ms (Views: 2552.8ms | ActiveRecord: 0.0ms | Allocations: 38875)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:26:08 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.8ms | Allocations: 492)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 851)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 5453)
+Completed 200 OK in 12ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 6222)
+
+
+Started GET "/users/sign_up" for 127.0.0.1 at 2022-12-16 20:26:11 +0530
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.4ms | Allocations: 225)
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.8ms | Allocations: 236)
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 570)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 14.6ms | Allocations: 5129)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 9690)
+Completed 200 OK in 54ms (Views: 28.6ms | ActiveRecord: 5.7ms | Allocations: 18951)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-16 20:26:13 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.3ms | Allocations: 225)
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 238)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.3ms | Allocations: 2423)
+  Rendered layout layouts/application.html.erb (Duration: 39.0ms | Allocations: 6986)
+Completed 200 OK in 47ms (Views: 41.0ms | ActiveRecord: 0.0ms | Allocations: 8407)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:26:14 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.0ms | Allocations: 431)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 499)
+  Rendered layout layouts/application.html.erb (Duration: 10.8ms | Allocations: 4904)
+Completed 200 OK in 14ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 5202)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:26:41 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.1ms | Allocations: 361)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 428)
+  Rendered layout layouts/application.html.erb (Duration: 2459.6ms | Allocations: 38593)
+Completed 200 OK in 2461ms (Views: 2460.3ms | ActiveRecord: 0.0ms | Allocations: 38855)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:26:54 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.9ms | Allocations: 352)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 419)
+  Rendered layout layouts/application.html.erb (Duration: 2450.0ms | Allocations: 38380)
+Completed 200 OK in 2452ms (Views: 2451.1ms | ActiveRecord: 0.0ms | Allocations: 38642)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:27:26 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.0ms | Allocations: 355)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 422)
+  Rendered layout layouts/application.html.erb (Duration: 2449.1ms | Allocations: 38392)
+Completed 200 OK in 2452ms (Views: 2450.1ms | ActiveRecord: 0.0ms | Allocations: 38654)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:27:43 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.3ms | Allocations: 358)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 425)
+  Rendered layout layouts/application.html.erb (Duration: 2461.6ms | Allocations: 38395)
+Completed 200 OK in 2464ms (Views: 2462.6ms | ActiveRecord: 0.0ms | Allocations: 38657)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:28:07 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.1ms | Allocations: 376)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 443)
+  Rendered layout layouts/application.html.erb (Duration: 2488.7ms | Allocations: 38409)
+Completed 200 OK in 2491ms (Views: 2489.6ms | ActiveRecord: 0.0ms | Allocations: 38671)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:29:52 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 3.5ms | Allocations: 2639)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3035)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 3120)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 3943)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass
+
+          <li>'.freeze;@output_buffer.append=( button_to "Food", user_foods_path(current_user.id), method: :get);@output_buffer.safe_append='</li>
+                                                                                             ^^^):
+     7:       <nav class="nav">
+     8:         <ul class="nav-wrapper">
+     9:            
+    10:           <li><%= button_to "Food", user_foods_path(current_user.id), method: :get%></li>
+    11:           <li><%= button_to "Recipes", user_recipes_path(current_user.id), method: :get%> </li>
+    12:           <li><%= link_to "Public recipes", public_recipes_path%></li>
+    13:         <li><%= link_to "Shopping list", shoppings_path%></li>
+  
+app/views/_navbar.html.erb:10
+app/views/shoppings/index.html.erb:1
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:30:24 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.5ms | Allocations: 684)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1077)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 5863)
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 6694)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:30:40 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.4ms | Allocations: 700)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1093)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 5878)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 0.0ms | Allocations: 6715)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:31:09 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.0ms | Allocations: 708)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1104)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 5891)
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 6729)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:32:15 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.5ms | Allocations: 707)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1100)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 5885)
+Completed 200 OK in 15ms (Views: 12.7ms | Allocations: 6712)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:32:44 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 27.0ms | Allocations: 5328)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 28.0ms | Allocations: 5719)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 5804)
+Completed 500 Internal Server Error in 32ms (Allocations: 6605)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `public_recipes_path' for #<ActionView::Base:0x00000000015b80>
+
+          <li>'.freeze;@output_buffer.append=( link_to "Public recipes", public_recipes_path);@output_buffer.safe_append='</li>
+                                                                         ^^^^^^^^^^^^^^^^^^^
+Did you mean?  public_compute_asset_path):
+     6:     <div>
+     7:       <nav class="nav">
+     8:         <ul class="nav-wrapper">
+     9:           <li><%= link_to "Public recipes", public_recipes_path%></li>
+    10: 
+    11:           <li><%= link_to "Shopping list", shoppings_path%></li>
+    12:         </ul>
+  
+app/views/_navbar.html.erb:9
+app/views/shoppings/index.html.erb:1
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:32:58 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.2ms | Allocations: 753)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1146)
+  Rendered layout layouts/application.html.erb (Duration: 12.8ms | Allocations: 5932)
+Completed 200 OK in 17ms (Views: 15.6ms | Allocations: 6753)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:33:12 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.2ms | Allocations: 737)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1130)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 5916)
+Completed 200 OK in 21ms (Views: 19.6ms | Allocations: 6744)
+
+
+Started GET "/shoppings" for 127.0.0.1 at 2022-12-16 20:33:36 +0530
+Processing by ShoppingsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering shoppings/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.9ms | Allocations: 346)
+  Rendered shoppings/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 413)
+  Rendered layout layouts/application.html.erb (Duration: 2559.3ms | Allocations: 38485)
+Completed 200 OK in 2561ms (Views: 2560.0ms | Allocations: 38763)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2022-12-16 20:33:47 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 1.0ms | Allocations: 218)
+  Rendered devise/shared/_links.html.erb (Duration: 1.9ms | Allocations: 517)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 7.6ms | Allocations: 2416)
+  Rendered layout layouts/application.html.erb (Duration: 15.7ms | Allocations: 6974)
+Completed 200 OK in 26ms (Views: 22.3ms | Allocations: 8063)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-16 20:33:54 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"EMAIL@MAIL.COM", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "email@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 26ms (ActiveRecord: 10.4ms | Allocations: 6576)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"EMAIL@MAIL.COM", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.2ms | Allocations: 139)
+  Rendered devise/shared/_links.html.erb (Duration: 0.1ms | Allocations: 130)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1516)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 6004)
+Completed 200 OK in 266ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 6816)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-16 20:34:00 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"EMAIL@MAIL.COM", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "email@mail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.4ms | Allocations: 1707)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"EMAIL@MAIL.COM", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.1ms | Allocations: 110)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 130)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1378)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 5763)
+Completed 200 OK in 275ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 6287)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2022-12-16 20:34:09 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"EMAIL1@MAIL.COM", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "email1@mail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 282ms (ActiveRecord: 0.9ms | Allocations: 2887)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-16 20:34:09 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/_navbar.html.erb:16
+  Rendered _navbar.html.erb (Duration: 2.3ms | Allocations: 1614)
+  Rendered users/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1805)
+  Rendered layout layouts/application.html.erb (Duration: 9.7ms | Allocations: 6407)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.5ms | Allocations: 7030)
+
+
+Started GET "/users/1/foods" for 127.0.0.1 at 2022-12-16 20:34:13 +0530
+Processing by FoodsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/_navbar.html.erb:16
+  Rendered _navbar.html.erb (Duration: 3.0ms | Allocations: 1552)
+  [1m[36mFood Load (1.9ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (Duration: 17.6ms | Allocations: 7385)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 11960)
+Completed 200 OK in 34ms (Views: 18.6ms | ActiveRecord: 7.1ms | Allocations: 14216)
+
+
+Started GET "/users/1/foods" for 127.0.0.1 at 2022-12-16 20:35:02 +0530
+Processing by FoodsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/_navbar.html.erb:16
+  Rendered _navbar.html.erb (Duration: 3.8ms | Allocations: 1755)
+  [1m[36mFood Load (0.3ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (Duration: 7.3ms | Allocations: 3847)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8617)
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.6ms | Allocations: 9467)
+
+
+Started GET "/users/1/foods" for 127.0.0.1 at 2022-12-16 20:35:34 +0530
+Processing by FoodsController#index as HTML
+  Parameters: {"user_id"=>"1"}
+  Rendering layout layouts/application.html.erb
+  Rendering foods/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/_navbar.html.erb:16
+  Rendered _navbar.html.erb (Duration: 4.0ms | Allocations: 1208)
+  [1m[36mFood Load (0.4ms)[0m  [1m[34mSELECT "foods".* FROM "foods"[0m
+  ↳ app/views/foods/index.html.erb:18
+  Rendered foods/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 2925)
+  Rendered layout layouts/application.html.erb (Duration: 2560.3ms | Allocations: 39885)
+Completed 200 OK in 2562ms (Views: 2560.3ms | ActiveRecord: 0.7ms | Allocations: 40177)
+
+
+Started GET "/users/sign_out" for 127.0.0.1 at 2022-12-16 20:35:42 +0530
+Processing by Devise::SessionsController#destroy as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 25ms (ActiveRecord: 0.3ms | Allocations: 5912)
+
+
+Started GET "/" for 127.0.0.1 at 2022-12-16 20:35:43 +0530
+Processing by UsersController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  Rendered _navbar.html.erb (Duration: 0.6ms | Allocations: 506)
+  Rendered users/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 700)
+  Rendered layout layouts/application.html.erb (Duration: 7.0ms | Allocations: 5293)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5950)
+
+
