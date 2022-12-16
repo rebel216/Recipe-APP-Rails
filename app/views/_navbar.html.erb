@@ -6,13 +6,20 @@
     <div>
       <nav class="nav">
         <ul class="nav-wrapper">
-          
+
           <%# <li><%= link_to "Shopping list", shoppings_path %>
+
+          <%# <li><%= link_to "Public recipes", public_recipes_path%> 
+
+      
         </ul>
       </nav>
     </div>
     <div>
       <% if user_signed_in? %>
+        <%= link_to"Food", user_foods_path(current_user.id), method: :get%>
+        <%= link_to "Recipes", user_recipes_path(current_user.id), method: :get%> 
+
         <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
           <%= link_to "Receipt", recipes_path %>
             <%= link_to "Food", user_foods_path(current_user) %>
