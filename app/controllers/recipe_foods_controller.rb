@@ -23,4 +23,25 @@ class RecipeFoodsController < ApplicationController
     @recipe_food.destroy
     redirect_to user_recipe_path(params[:user_id], params[:recipe_id])
   end
+
+  def update
+    @recipe_food = RecipeFood.find(params[:id])
+    if @recipe_food.update(recipe_foods_params)
+      flash[:success] = 'Recipe Food updated successfully.'
+    else
+      flash[:error] = 'Could not add'
+    end
+    redirect_to recipe_path(@recipe_food.recipe_id)
+  end
+
+  def edit
+    @recipe_food = RecipeFood.find(params[:id])
+  end
+
+  rivate
+
+  def recipe_foods_params
+    params.require(:recipe_food).permit(:quantity, :food_id)
+  end
+  
 end

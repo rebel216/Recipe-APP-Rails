@@ -1,4 +1,4 @@
-<header class="top" >
+<header class="" >
   <div class="header">
     <div>
       <h3 class="">Rails Recipe APP</h3>
@@ -7,17 +7,21 @@
       <nav class="nav">
         <ul class="nav-wrapper">
           
-          <li><%= link_to "Shopping list", shoppings_path%></li>
+          <%# <li><%= link_to "Shopping list", shoppings_path %>
         </ul>
       </nav>
     </div>
     <div>
       <% if user_signed_in? %>
         <%= link_to "Sign out", destroy_user_session_path, method: :delete%>
+          <%= link_to "Receipt", recipes_path %>
+            <%= link_to "Food", user_foods_path(current_user) %>
+             <%= link_to "Shoppings", user_shoppings_path(current_user) %>
       <% else %>
         <%= link_to "Log in", new_user_session_path %>
         <%= link_to "Sign up", new_user_registration_path %>
       <% end %>
     </div>
   </div>
+  
 </header>

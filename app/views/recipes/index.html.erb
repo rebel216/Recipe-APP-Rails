@@ -1,20 +1,19 @@
-<h2>ALL RECIPES | <small> <%= link_to 'Add Recipe', new_recipe_path %></small></h2>
+<%= render '/navbar' %>
+<h2 align="center">This is the List of Recipe Page</h2>
+<h3 align="center"><%= link_to 'Add Recipe', new_recipe_path, class:"btn btn-secondary" %></h3>
 
 
 
 <% @recipes.each do |r|  %>
 <div class="main-container">
 
-<div>
-<h3><%= r.name %></h3>
- <%= link_to 'Show', recipe_path(r) %>
-<%= link_to 'Edit', edit_recipe_path(r) %>
+    <div class="containerA">
+        <h3><%= r.name %></h3>
+        <%= link_to 'Show', recipe_path(r) %>
+        <%= link_to 'Edit', edit_recipe_path(r) %>
+    </div>
 
- <%# <%= button_to "Remove",  recipe_path(r.id), method: :delete, class: "button", data: { confirm: "Are you sure?"} %>
-
-</div>
-
-<div><%= r.description %></div>
+    <div class="containerB"><%= r.description %></div>
 
 </div>
 
