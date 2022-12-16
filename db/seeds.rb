@@ -1,3 +1,4 @@
+
 u1 = User.create(name: 'User1', email: 'email1@mail.com', password: 'aaaaaa')
 u2 = User.create(name: 'User2', email: 'email2@mail.com', password: 'aaaaaa')
 u3 = User.create(name: 'User3', email: 'email3@mail.com', password: 'aaaaaa')
@@ -26,3 +27,4 @@ recipefood7 = RecipeFood.create(quantity: 70, food_id: food3.id, recipe_id: reci
 recipefood8 = RecipeFood.create(quantity: 80, food_id: food4.id, recipe_id: recipe1.id)
 recipefood9 = RecipeFood.create(quantity: 90, food_id: food5.id, recipe_id: recipe2.id)
 recipefood10 = RecipeFood.create(quantity: 100, food_id: food1.id, recipe_id: recipe1.id)
+

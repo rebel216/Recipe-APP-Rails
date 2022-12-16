@@ -42,21 +42,20 @@ Then you can clone the project by typing ```git clone https://github.com/rebel21
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/neerajbhardwaj216/)
 
 ## 🤝 Contributing
+<a name="readme-top"></a>
+
+<div align="center">
+
+  <img src="https://github.com/ogiogiovictor/hello_rails/blob/master/murple_logo.png" alt="logo" width="140"  height="auto" />
+  <br/>
+
+  <h3><b>Recipe-APP-Rails</b></h3>
+</div>
+
+
+
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
-
-## 📝 License
-
-This project is [MIT](./MIT.md) licensed.
