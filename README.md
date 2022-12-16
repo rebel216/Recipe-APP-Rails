@@ -34,12 +34,18 @@ Then you can clone the project by typing ```git clone https://github.com/rebel21
 
 ## Authors
 
-
 👤 **Neeraj Bhardwaj**
 
 - GitHub: [@Neeraj-Bhardwaj](https://github.com/rebel216)
 - Twitter: [@Neeraj-Bhardwaj](https://twitter.com/rebel216)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/neerajbhardwaj216/)
+
+
+👤 **Ogiogio Victor**
+
+- GitHub: [@githubhandle](https://github.com/ogiogiovictor)
+- Twitter: [@twitterhandle](https://twitter.com/ogiogiovictor)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/ogiogiovictor)
 
 ## 🤝 Contributing
 <a name="readme-top"></a>
