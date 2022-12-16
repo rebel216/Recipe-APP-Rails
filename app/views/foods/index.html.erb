@@ -1,0 +1,30 @@
+<%= render '/navbar' %>
+<h2 align="center">This is the List of Foods Page</h2>
+<h3 align="center"><%= button_to "Add a new Food", new_user_food_path(current_user), method: :get , class:"btn btn-secondary"%>
+</h3>
+<br>
+<br>
+<div class="">
+    <table class="table" align="center">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Food Name</th>
+          <th scope="col">Measurement Unit</th>
+          <th scope="col">Unit Price</th>
+          <th scope="col">Actions</th>
+        </tr>
+      </thead>
+      <% @foods.each do |food| %>
+        <tbody>
+          <tr>
+            <th scope="row"><%= food.id %></th>
+            <td><%= food.name %></td>
+            <td><%= food.measurement_unit %></td>
+            <td><%= food.price %></td>
+            <td><%= button_to "Delete Food", user_food_path(current_user, food.id), method: :delete , class:"btn btn-danger"%></td>
+          </tr>
+        </tbody>
+      <% end %>
+    </table>
+</div>
