@@ -1,6 +1,6 @@
 <%= render '/navbar' %>
 
-<h2>ALL RECIPES | <small> <%= link_to 'Add Recipe', new_recipe_path %></small></h2>
+<h2><center>ALL RECIPES | <small> <%= link_to 'Add Recipe', new_recipe_path %></small></center></h2>
 
 
 
@@ -9,14 +9,15 @@
 
 <div>
 <h3><%= r.name %></h3>
- <%= link_to 'Show', recipe_path(r) %>
-<%= link_to 'Edit', edit_recipe_path(r) %>
 
- <%# <%= button_to "Remove",  recipe_path(r.id), method: :delete, class: "button", data: { confirm: "Are you sure?"} %>
+ <%= button_to "Remove",  recipe_path(r.id), method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?"} %>
+
+ <%# <%= link_to 'Show', recipe_path(r) %> 
+<%# <%= link_to 'Edit', edit_recipe_path(r) %>
 
 </div>
 
-<div><%= r.description %></div>
+<div class="desc"><%= r.description %></div>
 
 </div>
 
