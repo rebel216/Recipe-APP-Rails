@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
-@import "bootstrap";
+@import 'bootstrap';
 
 body {
   margin: 0;
@@ -100,22 +100,25 @@ table {
 .top {
   margin-top: -70px;
 }
+
 .container-receipe {
   margin: 0 auto;
   width: 900px;
   height: 100%;
-  padding:20px;
-  margin-top:10px;
+  padding: 20px;
+  margin-top: 10px;
   border: 2px solid black;
 }
 
-.container-receipe > h2, h1 {
+.container-receipe > h2,
+h1 {
   text-align: center;
 }
 
-.make_public{
+.make_public {
   margin-left: 20px;
 }
+
 .desc {
-  margin-left:40px;
+  margin-left: 40px;
 }
