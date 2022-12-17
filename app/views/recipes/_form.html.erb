@@ -1,0 +1,35 @@
+<%= render 'shared/errors', obj: @recipes %>
+
+<%= form_with(model: @recipes) do |f|  %>
+
+<p>
+<%= f.label :name %><br/>
+<%= f.text_field :name %>
+</p>
+
+<p>
+<%= f.label :preparation_time %><br/>
+<%= f.text_field :preparation_time %>
+</p>
+
+<p>
+<%= f.label :cooking_time %><br/>
+<%= f.text_field :cooking_time %>
+</p>
+
+<p>
+<%= f.label :public %><br/>
+<%= f.select :public, ['true', 'false'] %>
+</p>
+
+
+<p>
+<%= f.label :description %><br/>
+<%= f.text_area :description, :size => "30x7" %>
+</p>
+
+<p>
+<%= f.submit(@recipes.new_record? ? "Add Recipe" : "Update Recipe") %>
+</p>
+
+<% end %>

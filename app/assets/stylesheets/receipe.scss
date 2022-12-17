@@ -1,0 +1,16 @@
+.main-container {
+  margin: 0 auto;
+  width: 700px;
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+
+.containerA {
+  flex: 2;
+}
+
+.containerB {
+  flex: 3;
+}

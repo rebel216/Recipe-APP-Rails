@@ -1,0 +1,24 @@
+<%= render '/navbar' %>
+
+<h2><center>ALL RECIPES | <small> <%= link_to 'Add Recipe', new_recipe_path %></small></center></h2>
+
+
+
+<% @recipes.each do |r|  %>
+<div class="main-container">
+
+<div>
+<h3><%= link_to r.name, r, class: "recipetitle" %></h3>
+
+ <%= button_to "Remove",  recipe_path(r.id), method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?"} %>
+
+ <%# <%= link_to 'Show', recipe_path(r) %> 
+<%# <%= link_to 'Edit', edit_recipe_path(r) %>
+
+</div>
+
+<div class="desc"><%= r.description %></div>
+
+</div>
+
+<% end %>
