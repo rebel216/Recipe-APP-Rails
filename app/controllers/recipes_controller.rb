@@ -26,7 +26,14 @@ class RecipesController < ApplicationController
     end
   end
 
-  def show; end
+  def show
+    data = Recipe.where(id: params[:id])
+    @recipe = data[0]
+    @recipe_foods = Food.all.joins('INNER JOIN recipe_foods ON foods.id = recipe_foods.food_id')
+      .order(created_at: :desc).select('foods.*, recipe_foods.quantity, recipe_foods.id as recipe_foods_id')
+      .where(recipe_foods: { recipe_id: params[:id] })
+    return unless current_user
+  end
 
   def edit; end
 
