@@ -11,7 +11,7 @@ class PublicRecipesController < ApplicationController
     price
   end
 
-  def show 
+  def show
     @recipes = Recipe.find(params[:id])
   end
 end
