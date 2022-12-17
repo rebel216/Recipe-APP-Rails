@@ -1,3 +1,4 @@
+<%= render '/navbar' %>
 <h2>Add Foods Form</h2>
 
 <%= form_with model: @food, url: user_foods_path(current_user), method: :post, class: "form" do |form| %>
