@@ -10,4 +10,8 @@ class PublicRecipesController < ApplicationController
     recipe.foods.map { |rec| price += rec.price }
     price
   end
+
+  def show
+    @recipes = Recipe.find(params[:id])
+  end
 end

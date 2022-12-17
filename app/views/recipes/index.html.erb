@@ -8,7 +8,7 @@
 <div class="main-container">
 
 <div>
-<h3><%= r.name %></h3>
+<h3><%= link_to r.name, r, class: "recipetitle" %></h3>
 
  <%= button_to "Remove",  recipe_path(r.id), method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?"} %>
 

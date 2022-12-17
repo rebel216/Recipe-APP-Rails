@@ -1,0 +1,38 @@
+<%= render '/navbar' %>
+<div class="container-receipe">
+<h2> Receipt for  <%= @recipes.name %></h2>
+
+<p><strong>Preparation Time: </strong> <%= @recipes.preparation_time %></p>
+<div class="public-btn">
+        <% if @recipe.public %>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Public</label
+          >
+        </div>
+        <% end %> 
+
+        <% if !@recipe.public %>
+        <div class="form-check form-switch" style="float:right">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Public</label
+          >
+        </div>
+        <% end %>
+
+<p><strong>Cooking Time:</strong> <%= @recipes.cooking_time %> </p>
+<p><strong>Steps:</strong> <%= @recipes.description %></p>
+
+
+</div>

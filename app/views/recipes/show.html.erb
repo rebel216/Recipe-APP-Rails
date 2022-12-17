@@ -5,16 +5,14 @@
 <p><strong>Preparation Time: </strong> <%= @recipes.preparation_time %></p>
 <div class="public-btn">
         <% if @recipe.public %>
-        <div class="form-check form-switch">
+        <div class="form-check form-switch" style="float:right">
           <input
             class="form-check-input"
             type="checkbox"
             id="flexSwitchCheckChecked"
-            checked
-          />
+            checked/>
           <label class="form-check-label" for="flexSwitchCheckChecked"
-            >Public</label
-          >
+            >Public</label>
         </div>
         <% end %> 
 
@@ -38,6 +36,7 @@
       <button type = "button" class= "btn btn-dark bg-dark add mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
         Generate shopping list
       </button>
+
       <%= link_to new_user_food_path(@recipe), :class => "btn btn btn-outline-dark add mb-3" do %> Add Ingredients 
     <% end %>
   </div>
