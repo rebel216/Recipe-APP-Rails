@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
   resources :public_recipes
-  root 'users#index'
+  root 'public_recipes#index'
   resources :recipes
 
   resources :users do
