@@ -1,13 +1,77 @@
 <%= render '/navbar' %>
+<div class="container-receipe">
 <h2> Receipt for  <%= @recipes.name %></h2>
 
 <p><strong>Preparation Time: </strong> <%= @recipes.preparation_time %></p>
+<div class="public-btn">
+        <% if @recipe.public %>
+        <div class="form-check form-switch">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+            checked
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Public</label
+          >
+        </div>
+        <% end %> 
+
+        <% if !@recipe.public %>
+        <div class="form-check form-switch" style="float:right">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            id="flexSwitchCheckChecked"
+          />
+          <label class="form-check-label" for="flexSwitchCheckChecked"
+            >Public</label
+          >
+        </div>
+        <% end %>
+
 <p><strong>Cooking Time:</strong> <%= @recipes.cooking_time %> </p>
 <p><strong>Steps:</strong> <%= @recipes.description %></p>
 
-<%= link_to 'Return to recipes listing', recipes_path %> 
+ <div class="d-flex justify-content-between">
+      <button type = "button" class= "btn btn-dark bg-dark add mb-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Generate shopping list
+      </button>
+      <%= link_to new_user_food_path(@recipe), :class => "btn btn btn-outline-dark add mb-3" do %> Add Ingredients 
+    <% end %>
+  </div>
+
+   <hr />
+  <table class="table container rounded">
+    <thead>
+      <tr>
+        <th scope="col">Food</th>
+        <th scope="col">Quantity</th>
+        <th scope="col">Value</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @recipe.recipe_foods.each do |recipeFood|%> 
+      <tr>
+        <td><%= recipeFood.food.name%></th>
+        <td><%= recipeFood.quantity %><% recipeFood.food.measurement_unit  %></td>
+        <td>$<%= recipeFood.quantity.to_i * recipeFood.food.price %></td>
+          <td class="d-flex gap-3 justify-content-end">
+        
+         <%= button_to "Delete Food", user_food_path(current_user, recipeFood.id), method: :delete , class:"btn btn-danger"%>
+        <button class="btn btn-danger">Modify</button>
+          
+          </td>
+     
+      </tr>
+      <% end %>
+    </tbody>
+  </table>
+<%# <%= link_to 'Return to recipes listing', recipes_path %>  
 <%# <%= link_to 'Add Ingredient' %>  
-<% if can? :destroy, @recipes %> |
-<%= button_to 'Destroy', recipe_path(@recipes), method: :delete, data: { confirm: "Are you sure?"} %>
-<% end %>
-<hr/>
+<%# <% if can? :destroy, @recipes %> 
+<%# <%= button_to 'Destroy', recipe_path(@recipes), method: :delete, data: { confirm: "Are you sure?"} %> 
+<%# <% end %>  
+</div>

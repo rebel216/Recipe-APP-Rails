@@ -1,9 +1,9 @@
 
 <%= render '/navbar' %>
-
+<div class="container-receipe">
 <h1 class= "public title">Public recipes</h1>
 <% @recipes.each do |recipe| %>
-<div class="row g-0 text-center">
+<div class="row g-0 text-center" style="border:1px solid black">
     <div class="col-sm-6 col-md-8">
       <h1>
         <%= link_to recipe.name, recipe, class: "recipetitle" %>
@@ -24,3 +24,4 @@
         </div>
         </div>
     <% end %>
+    </div>
